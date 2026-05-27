@@ -1,13 +1,230 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>GameReviews - Reseñas y Compras</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div>
-        <h1>Hello, World!</h1>
-    </div>
+	<header>
+		<nav class="navbar">
+			<div class="nav-left">
+				<a href="index.html" class="logo-link">
+					<img class="logo" src="imglogo.jpg" alt="logo gamer" />
+				</a>
+			</div>
+			<ul class="nav-links">
+				<li><a class="nav-btn" href="index.html">Home</a></li>
+				<li><a class="nav-btn" href="login.html">Iniciar sesión</a></li>
+				<li><a class="nav-btn" href="register.html">Registrarse</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<h1 class="hero-title">GameReviews — Reseñas y compras de videojuegos</h1>
+				<p class="hero-desc">Ofrecemos reseñas reales y comparativas para que encuentres la mejor experiencia de compra. Descubre opiniones, compara ediciones y compra con confianza.</p>
+				<a href="#catalogo" class="cta">Ver catálogo</a>
+			</div>
+			<div class="hero-image">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Gaming_%28Unsplash%29.jpg" alt="jugando" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/0b/Steam_icon_logo.png'" />
+			</div>
+		</section>
+
+		<section id="catalogo" class="catalog">
+			<h2 class="section-title">Catálogo destacado</h2>
+			<div class="cards">
+				<!-- Tarjeta 1 -->
+				<article class="card">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic1.thegamerimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2024%2F06%2Felden-ring-steam.jpg&f=1&nofb=1&ipt=ef1b24e93cc34e51b4356eadaf0654f671894b68af5f19fee5f10e0d2d9ea3c6" alt="Elden Ring"/>
+					<h3>Elden Ring</h3>
+					<p>Un mundo abierto oscuro con combate exigente y libertad de exploración.</p>
+					<button class="buy">Comprar</button>
+				</article>
+
+				<article class="card">
+					<img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="The Witcher 3"/>
+					<h3>The Witcher 3</h3>
+					<p>Aventura épica, narrativa profunda y cientos de horas de contenido.</p>
+					<button class="buy">Comprar</button>
+				</article>
+
+				<article class="card">
+					<img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk 2077"/>
+					<h3>Cyberpunk 2077</h3>
+					<p>Mundo futurista, personalización y acción en primera persona.</p>
+					<button class="buy">Comprar</button>
+				</article>
+
+				<article class="card">
+					<img src="https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_4_cover.jpg" alt="God of War"/>
+					<h3>God of War</h3>
+					<p>Historia emocional con combates brutales y design sobresaliente.</p>
+					<button class="buy">Comprar</button>
+				</article>
+
+				<article class="card">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftwinfinite.net%2Fwp-content%2Fuploads%2F2020%2F07%2FHalo-Infinite-2.jpg&f=1&nofb=1&ipt=ed06a34ca14a3629612178635b2e4659255e873011d7595f7d3c1ac3cd3f648e" alt="Halo Infinite"/>
+					<h3>Halo Infinite</h3>
+					<p>FPS clásico con campaña épica y multijugador moderno.</p>
+					<button class="buy">Comprar</button>
+				</article>
+
+				<article class="card">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2631923.png&f=1&nofb=1&ipt=a65935934d736558cccbf256e0ba7a2e663b928e25a358c4a4333520caa453d7"/>
+					<h3>Doom Eternal</h3>
+					<p>Velocidad, violencia y música intensa — pura adrenalina.</p>
+					<button class="buy">Comprar</button>
+				</article>
+
+				<article class="card">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.8mecugUp0GOIk9a0KZMtGwHaEK%3Fpid%3DApi&f=1&ipt=c9dd1d7e4af622d0913fafeaf4a1ee76383bc4c1b693c123d4cddd253d9b61f9&ipo=images" alt="Minecraft"/>
+					<h3>Minecraft</h3>
+					<p>Crea, explora y sobrevive en mundos infinitos con amigos.</p>
+					<button class="buy">Comprar</button>
+				</article>
+
+				<article class="card">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.5g-ckM6T8f4wgDS5s1sliAHaEo%3Fpid%3DApi&f=1&ipt=fe63e4712f57140e485b1d543026343029d2e27be56b761c240c66a6489ac870&ipo=images" alt="GTA V"/>
+					<h3>GTA V</h3>
+					<p>Mundo abierto con humor negro, misiones variadas y modo online.</p>
+					<button class="buy">Comprar</button>
+				</article>
+
+				<article class="card">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.rMwiNi4a579MH-IV81fFpgHaEK%3Fpid%3DApi&f=1&ipt=5b5edc06d5188f387ff35e60abfecf8ae1669c264c6cc98f67450f53d1cdf1c3&ipo=images" alt="Skyrim"/>
+					<h3>Skyrim</h3>
+					<p>RPG clásico con libertad, mods y aventuras memorables.</p>
+					<button class="buy">Comprar</button>
+				</article>
+
+				<article class="card">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.hg3bRklAlhXZZ9DPfXZKSwHaEK%3Fcb%3Dthfvnextfalcon%26pid%3DApi&f=1&ipt=de5e5ea53e0b2b02056e263e043361262306fb1bf5e13cd48a4b54e28d351b6d&ipo=images" alt="Resident Evil 4 Remake"/>
+					<h3>Resident Evil 4 (Remake)</h3>
+					<p>Survival horror renovado para una experiencia moderna y tensa.</p>
+					<button class="buy">Comprar</button>
+				</article>
+			</div>
+		</section>
+
+		<section class="why">
+			<h2 class="section-title">Por qué elegirnos</h2>
+			<div class="why-grid">
+				<div>
+					<h3>Reseñas reales</h3>
+					<p>Opiniones verificadas de jugadores, no automatizadas.</p>
+				</div>
+				<div>
+					<h3>Comparativas claras</h3>
+					<p>Compara ediciones, precios y requisitos de sistema en un vistazo.</p>
+				</div>
+				<div>
+					<h3>Soporte atento</h3>
+					<p>Atención post-venta y recomendaciones personalizadas.</p>
+				</div>
+			</div>
+			<div class="why-images">
+				<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.b9txAXvuWqZ1rc0q5kDT2wHaEK%3Fcb%3Dthfvnextfalcon%26pid%3DApi&f=1&ipt=0ce6dba01a9809e0445f7783dd074372e5d1cd29a26678bdb6f21294af1f5ad7&ipo=images" alt="evento gaming"/>
+				<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.bVcJixDw7FGEpUz84rBLqAHaEK%3Fr%3D0%26pid%3DApi&f=1&ipt=ba329ae7da72308b63524b64d2516a126113efa4b721500a85415eb8f2c70dec&ipo=images" alt="esports"/>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP._UukvEFMTGIh6pE1S5JjugHaEK%3Fr%3D0%26pid%3DApi&f=1&ipt=e556c5579a20825fb81ec333d8119490a4238f0d0a8fc2832bc41b06df97902e&ipo=images" alt="games">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.ELOiTbYIgrjRyneoBr9dIwHaEK%3Fr%3D0%26pid%3DApi&f=1&ipt=fcd0fa41130e619937db23f24f281f4b76407c6108b54da2149e837d446aed53&ipo=images" alt="event">
+			</div>
+		</section>
+
+		<section class="reviews">
+			<h2 class="section-title">Reseñas de clientes</h2>
+			<div class="reviews-list">
+				<!-- 10 reseñas -->
+				<article class="review">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="avatar"/>
+					<div>
+						<h4>Alex</h4>
+						<p>Excelente proceso de compra. El juego llegó tal como esperaba y la reseña me ayudó a elegir.</p>
+					</div>
+				</article>
+
+				<article class="review">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="avatar"/>
+					<div>
+						<h4>María</h4>
+						<p>Buena atención y recomendaciones precisas. Volvería a comprar aquí.</p>
+					</div>
+				</article>
+
+				<article class="review">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="avatar"/>
+					<div>
+						<h4>Juan</h4>
+						<p>Las comparativas me ayudaron a decidir entre ediciones. Muy útiles.</p>
+					</div>
+				</article>
+
+				<article class="review">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="avatar"/>
+					<div>
+						<h4>Laura</h4>
+						<p>Fácil de navegar y encontrar ofertas. Recomendado.</p>
+					</div>
+				</article>
+
+				<article class="review">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="avatar"/>
+					<div>
+						<h4>Carlos</h4>
+						<p>Buena experiencia, la reseña fue honesta y detallada.</p>
+					</div>
+				</article>
+
+				<article class="review">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="avatar"/>
+					<div>
+						<h4>Valeria</h4>
+						<p>Encontré la edición perfecta gracias a la comparativa de precios.</p>
+					</div>
+				</article>
+
+				<article class="review">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="avatar"/>
+					<div>
+						<h4>Diego</h4>
+						<p>Entrega rápida y atención clara. 100% recomendable.</p>
+					</div>
+				</article>
+
+				<article class="review">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="avatar"/>
+					<div>
+						<h4>Sofía</h4>
+						<p>Gran selección y descripciones que coinciden con la realidad del juego.</p>
+					</div>
+				</article>
+
+				<article class="review">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="avatar"/>
+					<div>
+						<h4>Andrés</h4>
+						<p>Recomendaciones personalizadas que funcionaron para mi PC.</p>
+					</div>
+				</article>
+
+				<article class="review">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="avatar"/>
+					<div>
+						<h4>Patricia</h4>
+						<p>Todo claro en la compra y soporte atento. Muy satisfecha.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>Derechos reservados © 2026</p>
+	</footer>
+
 </body>
 </html>

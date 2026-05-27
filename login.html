@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es" class="h-full bg-gray-900">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar sesión - GameReviews</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-full">
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo-link">
+          <img class="logo" src="imglogo.jpg" alt="logo gamer" />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a class="nav-btn" href="index.html">Home</a></li>
+        <li><a class="nav-btn" href="login.html">Iniciar sesión</a></li>
+        <li><a class="nav-btn" href="register.html">Registrarse</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Tailwind login centered -->
+  <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="Perfil vacío" class="mx-auto h-12 w-12 rounded-full" />
+      <h2 class="mt-6 text-center text-2xl font-bold tracking-tight text-white">Inicia sesión en tu cuenta</h2>
+    </div>
+
+    <div class="mt-6 sm:mx-auto sm:w-full sm:max-w-sm">
+      <form action="#" method="POST" class="space-y-6">
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-100">Correo electrónico</label>
+          <div class="mt-2">
+            <input id="email" type="email" name="email" required autocomplete="email" class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm" />
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between">
+            <label for="password" class="block text-sm font-medium text-gray-100">Contraseña</label>
+            <div class="text-sm">
+              <a href="#" class="font-semibold text-indigo-400 hover:text-indigo-300">¿Olvidaste la contraseña?</a>
+            </div>
+          </div>
+          <div class="mt-2">
+            <input id="password" type="password" name="password" required autocomplete="current-password" class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm" />
+          </div>
+        </div>
+
+        <div>
+          <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-500 px-3 py-1.5 text-sm font-semibold text-white hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Iniciar sesión</button>
+        </div>
+      </form>
+
+      <p class="mt-6 text-center text-sm text-gray-400">¿No tienes cuenta? <a href="register.html" class="font-semibold text-indigo-400 hover:text-indigo-300">Regístrate</a></p>
+
+      <p class="mt-4 text-center text-sm text-gray-400">
+        <a href="register.html" class="small-link">No tienes cuenta, regístrate</a>
+      </p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Derechos reservados © 2026</p>
+  </footer>
+</body>
+</html>
